@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000 || process.env ;
+const port = 3000 || process.env.PORT ;
 const userRoutes = require("./router/routes");
 const mongocon =  require("./db/connect");
 require("dotenv").config();
